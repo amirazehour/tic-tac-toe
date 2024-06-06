@@ -1,0 +1,78 @@
+:root{
+    --background-color: white;
+    --box-color: violet;
+    --font-color: black;
+    --btn-background-color: rgb(85, 0, 255);
+}
+
+
+body{
+    background-color:var( --background-color);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-around;
+    display :grid;
+}
+
+#gamebox{
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+   
+}
+
+#change_mode{
+   margin: 50px;
+    font-size: 20px;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    font-size: 100px;
+   background-color:var(--box-color);
+    align-content: center;
+    color: var(--font-color);
+
+}
+
+h1{
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--font-color);
+    
+}
+
+
+body div{
+width: 455;
+text-align: center;
+}
+
+.box:nth-child(3n){
+    border-right: none;
+}
+
+.box:nth-child(6)~ .box{
+    border-bottom: none;
+}
+
+
+.btn{
+    background-color: var(--btn-background-color);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: #ffcc29;
+    color: black;
+}
